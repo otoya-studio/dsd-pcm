@@ -31,7 +31,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: dtolnay/rust-toolchain@1.87
+      - uses: dtolnay/rust-toolchain@1.120
       - run: cargo build --all-features
 
   # Licences, security advisories and duplicate versions of the dependencies (deny.toml).
