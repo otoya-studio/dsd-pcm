@@ -1,0 +1,12 @@
+# Weekly updates for the dependencies and the GitHub Actions of a published library repository
+# (scripts/export-lib.sh copies this file to .github/dependabot.yml).
+version: 2
+updates:
+  - package-ecosystem: cargo
+    directory: /
+    schedule:
+      interval: weekly
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: weekly

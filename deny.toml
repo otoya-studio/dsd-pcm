@@ -1,0 +1,18 @@
+# cargo-deny settings of a published library repository (scripts/export-lib.sh copies this file).
+
+[advisories]
+# Every RustSec advisory fails the check, unmaintained crates included.
+version = 2
+
+[licenses]
+version = 2
+# Permissive licences only, as the crate's own.
+allow = ["MIT", "Apache-2.0", "BSD-3-Clause", "BSL-1.0", "Unicode-3.0", "Unlicense", "Zlib"]
+
+[bans]
+multiple-versions = "warn"
+wildcards = "deny"
+
+[sources]
+unknown-registry = "deny"
+unknown-git = "deny"

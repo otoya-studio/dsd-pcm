@@ -1,0 +1,23 @@
+[package]
+name = "dsd-pcm"
+version = "0.1.0"
+edition = "2021"
+rust-version = "1.87"
+license = "MIT OR Apache-2.0"
+description = "DSD to PCM conversion with a linear-phase FIR cascade in 64-bit float"
+repository = "https://github.com/otoya-studio/dsd-pcm"
+readme = "README.md"
+keywords = ["dsd", "pcm", "audio", "decimation", "sacd"]
+categories = ["multimedia::audio", "multimedia::encoding"]
+# Not published yet: the owner decides when and under which repository URL.
+publish = false
+
+[dependencies]
+
+[lints.rust]
+missing_docs = "warn"
+unsafe_code = "forbid"
+
+[[bench]]
+name = "throughput"
+harness = false
